@@ -1,0 +1,32 @@
+﻿<Properties StartupConfiguration="{E573F2D7-BC6A-4810-BDDA-056071A1AB15}|https">
+  <MonoDevelop.Ide.Workbench>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="TabuProject" expanded="True">
+            <Node name="TabuProject">
+              <Node name="Controllers" expanded="True" />
+              <Node name="DAL" expanded="True" />
+              <Node name="DTOs">
+                <Node name="Languages" expanded="True" />
+              </Node>
+              <Node name="Services" expanded="True">
+                <Node name="Abstracts" expanded="True">
+                  <Node name="ILanguageService.cs" selected="True" />
+                </Node>
+                <Node name="Implements" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.TabuProject PreferredExecutionTarget="/Applications/Google Chrome.app" />
+</Properties>
