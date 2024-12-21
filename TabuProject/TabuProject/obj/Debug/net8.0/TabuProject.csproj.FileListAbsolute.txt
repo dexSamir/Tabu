@@ -250,3 +250,4 @@
 /Users/samirhebibov/Desktop/Tabu/TabuProject/TabuProject/bin/Debug/net8.0/FluentValidation.AspNetCore.dll
 /Users/samirhebibov/Desktop/Tabu/TabuProject/TabuProject/bin/Debug/net8.0/FluentValidation.DependencyInjectionExtensions.dll
 /Users/samirhebibov/Desktop/Tabu/TabuProject/TabuProject/obj/Debug/net8.0/TabuProject.sourcelink.json
+/Users/samirhebibov/Desktop/Tabu/TabuProject/TabuProject/bin/Debug/net8.0/AutoMapper.dll

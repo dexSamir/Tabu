@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "c3alqi6vWPfEdGZCbVcXwHaDjyLui86RjbKypmVJUZwojQMH9LfNPSj0/Zjz+xUauGwPoHmT1w+1xJvWDrRtHw==",
+  "dgSpecHash": "6+ehOTdDJlAd4AE8V+qDaVP0ncU6HmEdPN6326OXvz9BWoWYRYUEU5Cj+CjfClnTWzy76zmIGbnEJw83zkCftA==",
   "success": true,
   "projectFilePath": "/Users/samirhebibov/Desktop/Tabu/TabuProject/TabuProject/TabuProject.csproj",
   "expectedPackageFiles": [
+    "/Users/samirhebibov/.nuget/packages/automapper/13.0.1/automapper.13.0.1.nupkg.sha512",
     "/Users/samirhebibov/.nuget/packages/fluentvalidation/11.11.0/fluentvalidation.11.11.0.nupkg.sha512",
     "/Users/samirhebibov/.nuget/packages/fluentvalidation.aspnetcore/11.3.0/fluentvalidation.aspnetcore.11.3.0.nupkg.sha512",
     "/Users/samirhebibov/.nuget/packages/fluentvalidation.dependencyinjectionextensions/11.11.0/fluentvalidation.dependencyinjectionextensions.11.11.0.nupkg.sha512",

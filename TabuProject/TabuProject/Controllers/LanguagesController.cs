@@ -1,6 +1,8 @@
+using AutoMapper;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using TabuProject.DTOs.Languages;
+using TabuProject.Entities;
 using TabuProject.Services.Abstracts;
 
 namespace TabuProject.Controllers
@@ -9,9 +11,11 @@ namespace TabuProject.Controllers
     [ApiController]
     public class LanguagesController : ControllerBase
     {
+        readonly IMapper _mapper; 
         readonly ILanguageService _service;
-        public LanguagesController(ILanguageService service)
+        public LanguagesController(ILanguageService service, IMapper mapper)
         {
+            _mapper = mapper; 
             _service = service;
         }
         [HttpGet]
@@ -22,8 +26,9 @@ namespace TabuProject.Controllers
         [HttpPost]
         public async Task<IActionResult> Create(CreateLanguageDto dto)
         {
+            var data = _mapper.Map<Language>(dto); 
             await _service.CreateAsync(dto);
-            return Ok();
+            return Ok(data);
         }
         [HttpDelete("{code}")]
         public async Task<IActionResult> Delete(string? code)
