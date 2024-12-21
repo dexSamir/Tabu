@@ -20,7 +20,7 @@ namespace TabuProject.Services.Implements
             await _context.Languages.AddAsync(new Language
             {
                 Name = dto.Name,
-                Icon = dto.Icon,
+                Icon = dto.IconUrl,
                 Code = dto.Code
             });
             await _context.SaveChangesAsync();
@@ -59,20 +59,6 @@ namespace TabuProject.Services.Implements
                 }
             }
             await _context.SaveChangesAsync();
-        }
-
-        public async Task GetByCode(string? code)
-        {
-            var language = await _context.Languages.FirstOrDefaultAsync(x => x.Code == code);
-            if(language != null)
-            {
-                LanguageUpdateDto dto = new LanguageUpdateDto
-                {
-                    Name = language.Name,
-                    Icon = language.Icon
-                }; 
-            }
-            await _context.SaveChangesAsync(); 
         }
     }
 }

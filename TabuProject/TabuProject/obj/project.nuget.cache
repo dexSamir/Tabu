@@ -1,9 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "6+BYGVdqs0ApWrZij1ZAHrrWnsXmwPwHTgSsq3hnGcDixuCGdNIZORSdokVbELCcjaT76F8OMGBHnnomM33Ecw==",
+  "dgSpecHash": "c3alqi6vWPfEdGZCbVcXwHaDjyLui86RjbKypmVJUZwojQMH9LfNPSj0/Zjz+xUauGwPoHmT1w+1xJvWDrRtHw==",
   "success": true,
   "projectFilePath": "/Users/samirhebibov/Desktop/Tabu/TabuProject/TabuProject/TabuProject.csproj",
   "expectedPackageFiles": [
+    "/Users/samirhebibov/.nuget/packages/fluentvalidation/11.11.0/fluentvalidation.11.11.0.nupkg.sha512",
+    "/Users/samirhebibov/.nuget/packages/fluentvalidation.aspnetcore/11.3.0/fluentvalidation.aspnetcore.11.3.0.nupkg.sha512",
+    "/Users/samirhebibov/.nuget/packages/fluentvalidation.dependencyinjectionextensions/11.11.0/fluentvalidation.dependencyinjectionextensions.11.11.0.nupkg.sha512",
     "/Users/samirhebibov/.nuget/packages/humanizer/2.14.1/humanizer.2.14.1.nupkg.sha512",
     "/Users/samirhebibov/.nuget/packages/humanizer.core/2.14.1/humanizer.core.2.14.1.nupkg.sha512",
     "/Users/samirhebibov/.nuget/packages/humanizer.core.af/2.14.1/humanizer.core.af.2.14.1.nupkg.sha512",

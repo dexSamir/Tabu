@@ -1,19 +1,21 @@
 ﻿<Properties StartupConfiguration="{E573F2D7-BC6A-4810-BDDA-056071A1AB15}|https">
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="TabuProject/Services/Abstracts/ILanguageService.cs">
+    <Files>
+      <File FileName="TabuProject/Controllers/LanguagesController.cs" Line="37" Column="44" />
+      <File FileName="TabuProject/Services/Implements/LanguageService.cs" Line="63" Column="1" />
+      <File FileName="TabuProject/Services/Abstracts/ILanguageService.cs" Line="13" Column="6" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="TabuProject" expanded="True">
-            <Node name="TabuProject">
+            <Node name="TabuProject" expanded="True">
               <Node name="Controllers" expanded="True" />
               <Node name="DAL" expanded="True" />
-              <Node name="DTOs">
-                <Node name="Languages" expanded="True" />
-              </Node>
+              <Node name="Entities" expanded="True" />
               <Node name="Services" expanded="True">
-                <Node name="Abstracts" expanded="True">
-                  <Node name="ILanguageService.cs" selected="True" />
-                </Node>
+                <Node name="Abstracts" expanded="True" />
                 <Node name="Implements" expanded="True" />
               </Node>
             </Node>
@@ -22,11 +24,10 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.ItemProperties.TabuProject PreferredExecutionTarget="/Applications/Google Chrome.app" />
 </Properties>

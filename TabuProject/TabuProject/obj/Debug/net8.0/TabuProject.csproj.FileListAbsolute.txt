@@ -246,3 +246,7 @@
 /Users/samirhebibov/Desktop/Tabu/TabuProject/TabuProject/bin/Debug/net8.0/runtimes/win/lib/net7.0/System.Drawing.Common.dll
 /Users/samirhebibov/Desktop/Tabu/TabuProject/TabuProject/bin/Debug/net8.0/runtimes/win/lib/net7.0/System.Security.Cryptography.ProtectedData.dll
 /Users/samirhebibov/Desktop/Tabu/TabuProject/TabuProject/bin/Debug/net8.0/runtimes/win/lib/net7.0/System.Windows.Extensions.dll
+/Users/samirhebibov/Desktop/Tabu/TabuProject/TabuProject/bin/Debug/net8.0/FluentValidation.dll
+/Users/samirhebibov/Desktop/Tabu/TabuProject/TabuProject/bin/Debug/net8.0/FluentValidation.AspNetCore.dll
+/Users/samirhebibov/Desktop/Tabu/TabuProject/TabuProject/bin/Debug/net8.0/FluentValidation.DependencyInjectionExtensions.dll
+/Users/samirhebibov/Desktop/Tabu/TabuProject/TabuProject/obj/Debug/net8.0/TabuProject.sourcelink.json

@@ -34,7 +34,6 @@ namespace TabuProject.Controllers
         [HttpPatch("{code}")]
         public async Task<IActionResult> Update(string code, LanguageUpdateDto dto)
         {
-            await _service.GetByCode(code);
             await _service.UpdateAsync(dto, code);
             return Ok();
         }

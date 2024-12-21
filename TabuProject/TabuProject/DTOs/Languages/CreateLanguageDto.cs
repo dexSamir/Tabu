@@ -5,7 +5,7 @@ namespace TabuProject.DTOs.Languages
 	{
 		public string Code{ get; set; }
 		public string Name{ get; set; }
-		public string Icon{ get; set; }
+		public string IconUrl{ get; set; }
 	}
 }
 

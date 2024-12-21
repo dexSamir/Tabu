@@ -19,6 +19,9 @@
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.7" />
     <PackageReference Include="Microsoft.AspNetCore.Components.QuickGrid.EntityFrameworkAdapter" Version="8.0.11" />
     <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="8.0.11" />
+    <PackageReference Include="FluentValidation" Version="11.11.0" />
+    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.11.0" />
+    <PackageReference Include="FluentValidation.AspNetCore" Version="11.3.0" />
   </ItemGroup>
 
   <ItemGroup>
@@ -30,6 +33,8 @@
     <None Remove="Services\Implements\" />
     <None Remove="DTOs\" />
     <None Remove="DTOs\Languages\" />
+    <None Remove="Validators\" />
+    <None Remove="Validators\Languages\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Entities\" />
@@ -40,5 +45,7 @@
     <Folder Include="Services\Implements\" />
     <Folder Include="DTOs\" />
     <Folder Include="DTOs\Languages\" />
+    <Folder Include="Validators\" />
+    <Folder Include="Validators\Languages\" />
   </ItemGroup>
 </Project>

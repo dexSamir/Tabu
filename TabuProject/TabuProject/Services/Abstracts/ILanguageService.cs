@@ -10,7 +10,6 @@ namespace TabuProject.Services.Abstracts
 		Task<IEnumerable<LanguageGetDto>> GetAllAsync();
 		Task DeleteAsync(string code);
 		Task UpdateAsync(LanguageUpdateDto dto, string? code);
-		Task GetByCode(string? code);
     }
 }
 
