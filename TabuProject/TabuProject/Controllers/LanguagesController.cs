@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using TabuProject.DTOs.Languages;
 using TabuProject.Entities;
+using TabuProject.Exceptions;
 using TabuProject.Services.Abstracts;
 
 namespace TabuProject.Controllers
@@ -26,9 +27,30 @@ namespace TabuProject.Controllers
         [HttpPost]
         public async Task<IActionResult> Create(CreateLanguageDto dto)
         {
-            var data = _mapper.Map<Language>(dto); 
-            await _service.CreateAsync(dto);
-            return Ok(data);
+            try
+            {
+                await _service.CreateAsync(dto);
+                return Ok();
+            }
+            catch (Exception ex)
+            {
+                if(ex is IBaseException bEx)
+                {
+                    return StatusCode(bEx.StatusCode, new
+                    {
+                        StatusCode = bEx.StatusCode, 
+                        Message = bEx.ErrorMessage
+                    }); 
+                }
+                else
+                {
+                    return BadRequest(new
+                    {
+                        ex.Message
+                    }); 
+                }
+            }
+ 
         }
         [HttpDelete("{code}")]
         public async Task<IActionResult> Delete(string? code)

@@ -1,8 +1,10 @@
 ﻿using System;
+using AutoMapper;
 using Microsoft.EntityFrameworkCore;
 using TabuProject.DAL;
 using TabuProject.DTOs.Languages;
 using TabuProject.Entities;
+using TabuProject.Exceptions.Languages;
 using TabuProject.Services.Abstracts;
 
 namespace TabuProject.Services.Implements
@@ -10,29 +12,23 @@ namespace TabuProject.Services.Implements
     public class LanguageService : ILanguageService
     {
         readonly TabuDbContext _context;
-
-        public LanguageService(TabuDbContext context)
+        readonly IMapper _mapper; 
+        public LanguageService(TabuDbContext context, IMapper mapper)
         {
-            _context = context; 
+            _context = context;
+            _mapper = mapper; 
         }
         public async Task CreateAsync(CreateLanguageDto dto)
         {
-            await _context.Languages.AddAsync(new Language
-            {
-                Name = dto.Name,
-                Icon = dto.IconUrl,
-                Code = dto.Code
-            });
+            if (await _context.Languages.AnyAsync(x => x.Code == dto.Code))
+                throw new LanguageExistException(); 
+            await _context.Languages.AddAsync(_mapper.Map<Language>(dto));
             await _context.SaveChangesAsync();
         }
         public async Task<IEnumerable<LanguageGetDto>> GetAllAsync()
         {
-            return await _context.Languages.Select(x => new LanguageGetDto
-            {
-                Name = x.Name,
-                Code = x.Code,
-                Icon = x.Icon
-            }).ToListAsync(); 
+            var datas = await _context.Languages.ToListAsync();
+            return _mapper.Map<IEnumerable<LanguageGetDto>>(datas);
         }
         public async Task DeleteAsync(string code)
         {

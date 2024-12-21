@@ -9,7 +9,9 @@ namespace TabuProject.Profiles
 	{
 		public LanguageProfile()
 		{
-			CreateMap<CreateLanguageDto, Language>(); 
+			CreateMap<CreateLanguageDto, Language>()
+				.ForMember(l => l.Icon, lcd => lcd.MapFrom(x=> x.IconUrl));
+			CreateMap<Language, LanguageGetDto>();
 		}
 	}
 }

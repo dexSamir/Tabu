@@ -37,6 +37,8 @@
     <None Remove="Validators\" />
     <None Remove="Validators\Languages\" />
     <None Remove="Profiles\" />
+    <None Remove="Exceptions\" />
+    <None Remove="Exceptions\Languages\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Entities\" />
@@ -50,5 +52,7 @@
     <Folder Include="Validators\" />
     <Folder Include="Validators\Languages\" />
     <Folder Include="Profiles\" />
+    <Folder Include="Exceptions\" />
+    <Folder Include="Exceptions\Languages\" />
   </ItemGroup>
 </Project>
