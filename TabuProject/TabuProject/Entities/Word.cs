@@ -7,7 +7,7 @@ namespace TabuProject.Entities
 		public string Text { get; set; }
 		public string LangCode { get; set; }
 		public Language Language { get; set; }
-		public ICollection<BannedWord> BannedWords { get; set; }
+		public List<BannedWord> BannedWords { get; set; }
 	}
 }
 

@@ -25,8 +25,6 @@ namespace TabuProject.Services.Implements
         {
             if (await _context.Words.AnyAsync(x => x.Id == dto.Id))
                 throw new WordExitsException();
-            if (!await _context.Languages.AnyAsync(x => x.Code == dto.LangCode))
-                throw new LanguageNotFoundException($"{dto.LangCode} dil kodu movcud deyil!");
 
             var word = _mapper.Map<Word>(dto);
             await _context.Words.AddAsync(word);
@@ -60,7 +58,7 @@ namespace TabuProject.Services.Implements
 
         public async Task<IEnumerable<WordGetDto>> GetAllAsync()
         {
-            var datas = await _context.Words.ToListAsync();
+            var datas = await _context.Words.Include(x=> x.BannedWords).ToListAsync();
             return _mapper.Map<IEnumerable<WordGetDto>>(datas);
         }
 
@@ -70,8 +68,9 @@ namespace TabuProject.Services.Implements
                 throw new ArgumentNullException(nameof(id), "Id null ola bilmez!");
 
             var word = await _context.Words.FindAsync(id);
-            if (word == null) 
-                throw new WordNotFoundException();
+            if (word == null)
+                return false;
+
             _mapper.Map(dto, word);
             await _context.SaveChangesAsync(); 
             return true ; 

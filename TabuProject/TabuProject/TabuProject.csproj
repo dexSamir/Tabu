@@ -44,6 +44,7 @@
     <None Remove="DTOs\BannedWord\" />
     <None Remove="Exceptions\BannedWords\" />
     <None Remove="Validators\Words\" />
+    <None Remove="Validators\BannedWords\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Entities\" />
@@ -64,5 +65,6 @@
     <Folder Include="DTOs\BannedWord\" />
     <Folder Include="Exceptions\BannedWords\" />
     <Folder Include="Validators\Words\" />
+    <Folder Include="Validators\BannedWords\" />
   </ItemGroup>
 </Project>

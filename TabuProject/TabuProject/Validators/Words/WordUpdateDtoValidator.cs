@@ -24,9 +24,9 @@ namespace TabuProject.Validators.Words
                 .NotNull()
                     .WithMessage("Soz kodu null ola bilmez!")
 				.MaximumLength(32)
-					.WithMessage("Soz kodu maximum 32 simvol uzunlugunda olmalidir!")
-				.MaximumLength(2)
-                    .WithMessage("Soz kodu minimum 2 simvol uzunlugunda olmalidir!");
+					.WithMessage("Soz maximum 32 simvol uzunlugunda olmalidir!")
+				.MinimumLength(2)
+                    .WithMessage("Soz minimum 2 simvol uzunlugunda olmalidir!");
 				
 
 		}

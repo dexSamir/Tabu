@@ -10,8 +10,9 @@ namespace TabuProject.Profiles
 		public WordProfile()
 		{
 			CreateMap<WordCreateDto, Word>();
-			CreateMap<Word, WordGetDto>();
-			CreateMap<WordUpdateDto, Word>();
+			CreateMap<Word, WordGetDto>()
+				.ForMember(dest => dest.BannedWords, opt => opt.MapFrom(src => src.BannedWords));
+            CreateMap<WordUpdateDto, Word>();
 		}
 	}
 }
