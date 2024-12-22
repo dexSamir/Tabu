@@ -24,6 +24,37 @@ namespace TabuProject.Controllers
         {
             return Ok(await _service.GetAllAsync());
         }
+
+        [HttpGet("{code}")]
+        public async Task<IActionResult> GetOne(string? code)
+        {
+            try
+            {
+                var language = await _service.GetByCodeAsync(code);
+                return Ok(language);
+
+            }
+            catch (Exception ex)
+            {
+                if(ex is IBaseException bEx)
+                {
+                    return StatusCode(bEx.StatusCode, new
+                    {
+                        Message = bEx.ErrorMessage,
+                        StatusCode = bEx.StatusCode
+                    });
+                }
+                else
+                {
+                    return BadRequest(new
+                    {
+                        ex.Message
+                    });
+                }
+            }
+        }
+
+
         [HttpPost]
         public async Task<IActionResult> Create(CreateLanguageDto dto)
         {
@@ -61,8 +92,17 @@ namespace TabuProject.Controllers
         [HttpPatch("{code}")]
         public async Task<IActionResult> Update(string code, LanguageUpdateDto dto)
         {
-            await _service.UpdateAsync(dto, code);
-            return Ok();
+            var language = await _service.GetByCodeAsync(code);
+
+            if (language == null)
+                return NotFound();
+
+            var isUpdate = await _service.UpdateAsync(dto, code);
+
+            if (isUpdate)
+                return Ok(language);
+            else
+                return BadRequest();
         }
     }
 }
