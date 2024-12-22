@@ -39,6 +39,8 @@
     <None Remove="Profiles\" />
     <None Remove="Exceptions\" />
     <None Remove="Exceptions\Languages\" />
+    <None Remove="DTOs\Word\" />
+    <None Remove="Exceptions\Words\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Entities\" />
@@ -54,5 +56,7 @@
     <Folder Include="Profiles\" />
     <Folder Include="Exceptions\" />
     <Folder Include="Exceptions\Languages\" />
+    <Folder Include="DTOs\Word\" />
+    <Folder Include="Exceptions\Words\" />
   </ItemGroup>
 </Project>

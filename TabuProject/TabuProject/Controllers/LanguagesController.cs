@@ -19,12 +19,6 @@ namespace TabuProject.Controllers
             _mapper = mapper; 
             _service = service;
         }
-        [HttpGet]
-        public async Task<IActionResult> Get()
-        {
-            return Ok(await _service.GetAllAsync());
-        }
-
         [HttpGet("{code}")]
         public async Task<IActionResult> GetOne(string? code)
         {
@@ -53,6 +47,12 @@ namespace TabuProject.Controllers
                 }
             }
         }
+        [HttpGet]
+        public async Task<IActionResult> Get()
+        {
+            return Ok(await _service.GetAllAsync());
+        }
+
 
 
         [HttpPost]
@@ -83,12 +83,6 @@ namespace TabuProject.Controllers
             }
  
         }
-        [HttpDelete("{code}")]
-        public async Task<IActionResult> Delete(string? code)
-        {
-            await _service.DeleteAsync(code);
-            return Ok(); 
-        }
         [HttpPatch("{code}")]
         public async Task<IActionResult> Update(string code, LanguageUpdateDto dto)
         {
@@ -103,6 +97,12 @@ namespace TabuProject.Controllers
                 return Ok(language);
             else
                 return BadRequest();
+        }
+        [HttpDelete("{code}")]
+        public async Task<IActionResult> Delete(string? code)
+        {
+            await _service.DeleteAsync(code);
+            return Ok(); 
         }
     }
 }

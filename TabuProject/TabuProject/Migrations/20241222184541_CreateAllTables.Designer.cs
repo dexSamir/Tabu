@@ -12,8 +12,8 @@ using TabuProject.DAL;
 namespace TabuProject.Migrations
 {
     [DbContext(typeof(TabuDbContext))]
-    [Migration("20241222103146_CreateGameWordsBannedWords")]
-    partial class CreateGameWordsBannedWords
+    [Migration("20241222184541_CreateAllTables")]
+    partial class CreateAllTables
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -45,7 +45,7 @@ namespace TabuProject.Migrations
 
                     b.HasIndex("WordId");
 
-                    b.ToTable("BannedWord");
+                    b.ToTable("bannedWords");
                 });
 
             modelBuilder.Entity("TabuProject.Entities.Game", b =>
@@ -84,7 +84,7 @@ namespace TabuProject.Migrations
 
                     b.HasIndex("LangCode");
 
-                    b.ToTable("Game");
+                    b.ToTable("Games");
                 });
 
             modelBuilder.Entity("TabuProject.Entities.Language", b =>
@@ -133,7 +133,7 @@ namespace TabuProject.Migrations
 
                     b.HasIndex("LangCode");
 
-                    b.ToTable("Word");
+                    b.ToTable("Words");
                 });
 
             modelBuilder.Entity("TabuProject.Entities.BannedWord", b =>

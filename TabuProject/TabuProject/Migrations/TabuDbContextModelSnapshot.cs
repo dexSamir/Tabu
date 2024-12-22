@@ -42,7 +42,7 @@ namespace TabuProject.Migrations
 
                     b.HasIndex("WordId");
 
-                    b.ToTable("BannedWord");
+                    b.ToTable("bannedWords");
                 });
 
             modelBuilder.Entity("TabuProject.Entities.Game", b =>
@@ -81,7 +81,7 @@ namespace TabuProject.Migrations
 
                     b.HasIndex("LangCode");
 
-                    b.ToTable("Game");
+                    b.ToTable("Games");
                 });
 
             modelBuilder.Entity("TabuProject.Entities.Language", b =>
@@ -130,7 +130,7 @@ namespace TabuProject.Migrations
 
                     b.HasIndex("LangCode");
 
-                    b.ToTable("Word");
+                    b.ToTable("Words");
                 });
 
             modelBuilder.Entity("TabuProject.Entities.BannedWord", b =>

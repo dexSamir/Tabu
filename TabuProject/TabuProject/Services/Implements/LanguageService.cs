@@ -50,6 +50,7 @@ namespace TabuProject.Services.Implements
         //UPDATE
         public async Task<bool> UpdateAsync(LanguageUpdateDto dto, string? code)
         {
+
             var language = await _context.Languages.FirstOrDefaultAsync(x => x.Code == code);
             if (language == null)
                 return false;
@@ -65,7 +66,7 @@ namespace TabuProject.Services.Implements
         {
             var data = await _context.Languages.FirstOrDefaultAsync(x => x.Code == code);
             if (data == null)
-                return null;
+                throw new LanguageNotFoundException();
             
             return _mapper.Map<LanguageGetDto>(data); 
         }

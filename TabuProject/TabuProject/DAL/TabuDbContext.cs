@@ -7,6 +7,9 @@ namespace TabuProject.DAL
 	public class TabuDbContext : DbContext
 	{
 		public DbSet<Language> Languages{ get; set; }
+		public DbSet<Word> Words{ get; set; }
+		public DbSet<BannedWord> bannedWords { get; set; }
+		public DbSet<Game> Games { get; set; }
 		public TabuDbContext(DbContextOptions<TabuDbContext> options) : base(options){ }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
