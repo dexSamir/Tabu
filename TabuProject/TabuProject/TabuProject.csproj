@@ -41,6 +41,9 @@
     <None Remove="Exceptions\Languages\" />
     <None Remove="DTOs\Word\" />
     <None Remove="Exceptions\Words\" />
+    <None Remove="DTOs\BannedWord\" />
+    <None Remove="Exceptions\BannedWords\" />
+    <None Remove="Validators\Words\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Entities\" />
@@ -58,5 +61,8 @@
     <Folder Include="Exceptions\Languages\" />
     <Folder Include="DTOs\Word\" />
     <Folder Include="Exceptions\Words\" />
+    <Folder Include="DTOs\BannedWord\" />
+    <Folder Include="Exceptions\BannedWords\" />
+    <Folder Include="Validators\Words\" />
   </ItemGroup>
 </Project>
