@@ -25,6 +25,42 @@ namespace TabuProject.DAL
 					.HasMaxLength(128); 
 					
 			});
+			modelBuilder.Entity<Word>(w =>
+			{
+				w.Property(x => x.Text)
+					.IsRequired()
+					.HasMaxLength(32);
+				w.HasOne(x => x.Language)
+					.WithMany(x => x.Words)
+					.HasForeignKey(x => x.LangCode);
+				w.HasMany(x => x.BannedWords)
+					.WithOne(x => x.Word)
+					.HasForeignKey(x => x.WordId);
+
+			});
+			modelBuilder.Entity<Game>(g =>
+			{
+				g.HasKey(x => x.Id);
+				g.HasOne(x => x.Language)
+					.WithMany(x => x.Games)
+					.HasForeignKey(x => x.LangCode);
+				g.Property(x => x.BannedWordCount)
+					.IsRequired();
+				g.Property(x => x.FailCount)
+					.IsRequired();
+				g.Property(x => x.SkipCount)
+					.IsRequired();
+				g.Property(x => x.SuccessAnswer)
+					.IsRequired(); 
+
+			});
+			modelBuilder.Entity<BannedWord>(b =>
+			{
+				b.Property(x => x.Text)
+					.IsRequired()
+					.HasMaxLength(32);
+						
+			});
             base.OnModelCreating(modelBuilder);
         }
     }
