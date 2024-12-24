@@ -9,7 +9,7 @@ using TabuProject.Exceptions.Words;
 using TabuProject.Services.Abstracts;
 
 namespace TabuProject.Services.Implements
-{
+{   
     public class WordService : IWordService
     {
         readonly TabuDbContext _context;

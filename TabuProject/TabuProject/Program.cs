@@ -1,10 +1,11 @@
 ﻿
-using Microsoft.EntityFrameworkCore;
+
 using TabuProject.DAL;
 using TabuProject.Services.Implements;
 using TabuProject.Services.Abstracts;
 using FluentValidation.AspNetCore;
 using FluentValidation;
+using Microsoft.EntityFrameworkCore;
 
 namespace TabuProject;
 
@@ -46,4 +47,3 @@ public class Program
         app.Run();
     }
 }
-

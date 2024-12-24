@@ -1,6 +1,5 @@
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.CodeAnalysis.Host;
 using Microsoft.DotNet.Scaffolding.Shared.Messaging;
 using TabuProject.DTOs.Word;
 using TabuProject.Exceptions;

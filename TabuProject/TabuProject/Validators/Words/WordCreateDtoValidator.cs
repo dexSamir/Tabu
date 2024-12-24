@@ -29,7 +29,7 @@ namespace TabuProject.Validators.Words
 
 			RuleFor(x=> x.Text)
                 .NotNull()
-                    .WithMessage("Soz kodu null ola bilmez!")
+                    .WithMessage("Soz null ola bilmez!")
 				.MaximumLength(32)
 					.WithMessage("Soz maximum 32 simvol uzunlugunda olmalidir!")
 				.MinimumLength(2)
