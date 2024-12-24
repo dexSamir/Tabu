@@ -77,6 +77,36 @@ namespace TabuProject.Controllers
                 }
             }
         }
+        [HttpPost("[Action]")]
+        public async Task<IActionResult> CreateMany(List<WordCreateDto> dto)
+        {
+            try
+            {
+                foreach (var item in dto)
+                {
+                    await _service.CreateAsync(item);
+                }
+                return Ok();
+            }
+            catch (Exception ex)
+            {
+                if (ex is IBaseException BEX)
+                {
+                    return StatusCode(BEX.StatusCode, new
+                    {
+                        Message = BEX.ErrorMessage,
+                        StatusCode = BEX.StatusCode
+                    });
+                }
+                else
+                {
+                    return BadRequest(new
+                    {
+                        ex.Message
+                    });
+                }
+            }
+        }
         [HttpPatch("{id}")]
         public async Task<IActionResult> Update(int? id, WordUpdateDto dto)
         {

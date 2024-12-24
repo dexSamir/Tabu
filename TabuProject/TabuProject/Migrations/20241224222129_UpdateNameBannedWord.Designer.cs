@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 using TabuProject.DAL;
@@ -11,9 +12,11 @@ using TabuProject.DAL;
 namespace TabuProject.Migrations
 {
     [DbContext(typeof(TabuDbContext))]
-    partial class TabuDbContextModelSnapshot : ModelSnapshot
+    [Migration("20241224222129_UpdateNameBannedWord")]
+    partial class UpdateNameBannedWord
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

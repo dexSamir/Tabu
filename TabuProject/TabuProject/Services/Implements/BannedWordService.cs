@@ -37,7 +37,7 @@ namespace TabuProject.Services.Implements
 
             var bannedWord = _mapper.Map<BannedWord>(dto);
             bannedWord.WordId = word.Id; 
-            await _context.bannedWords.AddAsync(bannedWord);
+            await _context.BannedWords.AddAsync(bannedWord);
             await _context.SaveChangesAsync();
         }
 
@@ -45,11 +45,11 @@ namespace TabuProject.Services.Implements
         {
             if (id == null)
                 throw new ArgumentException(nameof(id), "Id null ola bilmez!");
-            var data = await _context.bannedWords.FindAsync(id);
+            var data = await _context.BannedWords.FindAsync(id);
             if (data == null)
                 throw new NotFoundBannedWordException();
 
-            _context.bannedWords.Remove(data);
+            _context.BannedWords.Remove(data);
             await _context.SaveChangesAsync(); 
         }
 
@@ -58,7 +58,7 @@ namespace TabuProject.Services.Implements
             if (id == null)
                 throw new ArgumentException(nameof(id), "Id null ola bilmez!");
 
-            var data = await _context.bannedWords.FindAsync(id);
+            var data = await _context.BannedWords.FindAsync(id);
             if (data == null)
                 throw new NotFoundBannedWordException();
 
@@ -68,7 +68,7 @@ namespace TabuProject.Services.Implements
 
         public async Task<IEnumerable<BannedWordGetDto>> GetAllAsync()
         {
-            var datas = await _context.bannedWords.Include(x=> x.Word).ToListAsync();
+            var datas = await _context.BannedWords.Include(x=> x.Word).ToListAsync();
             return _mapper.Map<IEnumerable<BannedWordGetDto>>(datas); 
         }
 
@@ -77,7 +77,7 @@ namespace TabuProject.Services.Implements
             if (id == null)
                 throw new ArgumentNullException(nameof(id), "Id null ola bilmez!");
 
-            var bannedWord = await _context.bannedWords.FindAsync(id);
+            var bannedWord = await _context.BannedWords.FindAsync(id);
             if (bannedWord == null)
                 return false;
             _mapper.Map(dto, bannedWord);

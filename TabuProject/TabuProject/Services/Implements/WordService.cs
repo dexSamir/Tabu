@@ -13,7 +13,8 @@ namespace TabuProject.Services.Implements
     public class WordService : IWordService
     {
         readonly TabuDbContext _context;
-        readonly IMapper _mapper; 
+        readonly IMapper _mapper;
+
         public WordService(TabuDbContext context, IMapper mapper)
         {
             _context = context;
@@ -21,14 +22,16 @@ namespace TabuProject.Services.Implements
         }
 
         //CREATE
-        public async Task CreateAsync(WordCreateDto dto)
+        public async Task<int> CreateAsync(WordCreateDto dto)
         {
-            if (await _context.Words.AnyAsync(x => x.Id == dto.Id))
+            if (await _context.Words.AnyAsync(x => x.Text == dto.Text))
                 throw new WordExitsException();
 
-            var word = _mapper.Map<Word>(dto);
+            Word word = _mapper.Map<Word>(dto);
+            
             await _context.Words.AddAsync(word);
-            await _context.SaveChangesAsync(); 
+            await _context.SaveChangesAsync();
+            return word.Id; 
         }
 
         public async Task DeleteAysnc(int? id)
@@ -36,8 +39,7 @@ namespace TabuProject.Services.Implements
             if (id == null)
                 throw new ArgumentNullException(nameof(id),"Id null ola bilmez!");
 
-            var word = await _context.Words.FindAsync(id);
-            if (word == null)
+            var word = await _context.Words.FindAsync(id) ??
                 throw new WordNotFoundException();
 
             _context.Words.Remove(word);
@@ -50,10 +52,9 @@ namespace TabuProject.Services.Implements
                 throw new ArgumentNullException(nameof(id), "Id null ola bilmez!");
             var word = await _context.Words.FindAsync(id);
 
-            if (word == null)
-                throw new WordNotFoundException();
-
-            return _mapper.Map<WordGetDto>(word); 
+            return word == null ?
+                throw new WordNotFoundException() :
+                _mapper.Map<WordGetDto>(word);
         }
 
         public async Task<IEnumerable<WordGetDto>> GetAllAsync()

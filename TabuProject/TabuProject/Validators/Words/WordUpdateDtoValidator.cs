@@ -15,11 +15,7 @@ namespace TabuProject.Validators.Words
 					.WithMessage("Dil kodu null ola bilmez!")
 				.Length(2)
 					.WithMessage("Dil kodu maximum 2 simvol uzunlugunda olmalidir!");
-			RuleFor(x => x.Id)
-				.NotEmpty()
-					.WithMessage("Id bosh ola bilmez!")
-				.NotNull()
-					.WithMessage("Id kodu null ola bilmez!"); 
+
 			RuleFor(x=> x.Text)
                 .NotNull()
                     .WithMessage("Soz kodu null ola bilmez!")

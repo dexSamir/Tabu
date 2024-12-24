@@ -1,4 +1,6 @@
 ﻿using System;
+using TabuProject.DTOs.Word;
+
 namespace TabuProject.DTOs.Languages
 {
 	public class LanguageGetDto
@@ -6,7 +8,6 @@ namespace TabuProject.DTOs.Languages
 		public string Code{ get; set; }
 		public string Name{ get; set; }
 		public string Icon{ get; set; }
-
 	}
 }
 
