@@ -5,7 +5,7 @@ namespace TabuProject.Services.Abstracts
 {
 	public interface IWordService
 	{
-		Task CreateAsync(WordCreateDto dto);
+		Task<int> CreateAsync(WordCreateDto dto);
 		Task DeleteAysnc(int? id);
 		Task<IEnumerable<WordGetDto>> GetAllAsync();
 		Task<bool> UpdateAsync(int? id, WordUpdateDto dto); 

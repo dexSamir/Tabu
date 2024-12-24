@@ -16,7 +16,6 @@ namespace TabuProject.Validators.Languages
 					.WithMessage("Code Null ola bilmez!")
 				.Length(2)
 					.WithMessage("Code 2 simvol uzunlunda olmalidir!");
-
 			RuleFor(x => x.Name)
 				.MaximumLength(32)
 				.MinimumLength(3);

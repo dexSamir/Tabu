@@ -11,7 +11,7 @@ namespace TabuProject.Profiles
 		{
 			CreateMap<WordCreateDto, Word>();
 			CreateMap<Word, WordGetDto>()
-				.ForMember(dest => dest.BannedWords, opt => opt.MapFrom(src => src.BannedWords));
+				.ForMember(dest => dest.BannedWords, opt => opt.MapFrom(src => src.BannedWords));   
             CreateMap<WordUpdateDto, Word>();
 		}
 	}

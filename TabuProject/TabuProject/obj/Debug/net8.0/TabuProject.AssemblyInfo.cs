@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TabuProject")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cf2bd4c22e69cbde489782bb9614f0c9e7f3754f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ccaa11130b39bf9623af3e539147dc6816925309")]
 [assembly: System.Reflection.AssemblyProductAttribute("TabuProject")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TabuProject")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

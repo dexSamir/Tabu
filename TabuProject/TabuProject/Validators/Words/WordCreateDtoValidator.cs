@@ -8,6 +8,17 @@ namespace TabuProject.Validators.Words
 	{
 		public WordCreateDtoValidator()
 		{
+			RuleForEach(x => x.BannedWords)
+				.NotNull()
+				.MinimumLength(2)
+                    .WithMessage("Soz minimum 2 simvol uzunlugunda olmalidir!")
+                .MaximumLength(32)
+                    .WithMessage("Soz maximum 32 simvol uzunlugunda olmalidir!");
+
+			RuleFor(x => x.BannedWords)
+                .NotNull()
+                .Must(x => x.Count == 6); 
+
 			RuleFor(x => x.LangCode)
 				.NotEmpty()
 					.WithMessage("Dil bosh ola bilmez!")
@@ -20,9 +31,10 @@ namespace TabuProject.Validators.Words
 					.WithMessage("Id bosh ola bilmez!")
 				.NotNull()
 					.WithMessage("Id kodu null ola bilmez!"); 
+
 			RuleFor(x=> x.Text)
                 .NotNull()
-                    .WithMessage("Soz kodu null ola bilmez!")
+                    .WithMessage("Soz null ola bilmez!")
 				.MaximumLength(32)
 					.WithMessage("Soz maximum 32 simvol uzunlugunda olmalidir!")
 				.MinimumLength(2)
