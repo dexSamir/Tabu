@@ -251,3 +251,14 @@
 /Users/samirhebibov/Desktop/Tabu/TabuProject/TabuProject/obj/Debug/net8.0/TabuProject.pdb
 /Users/samirhebibov/Desktop/Tabu/TabuProject/TabuProject/obj/Debug/net8.0/TabuProject.genruntimeconfig.cache
 /Users/samirhebibov/Desktop/Tabu/TabuProject/TabuProject/obj/Debug/net8.0/ref/TabuProject.dll
+C:\Users\ll Novbe\Desktop\All Codes\Tabu\TabuProject\TabuProject\obj\Debug\net8.0\TabuProject.csproj.AssemblyReference.cache
+C:\Users\ll Novbe\Desktop\All Codes\Tabu\TabuProject\TabuProject\obj\Debug\net8.0\TabuProject.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ll Novbe\Desktop\All Codes\Tabu\TabuProject\TabuProject\obj\Debug\net8.0\TabuProject.AssemblyInfoInputs.cache
+C:\Users\ll Novbe\Desktop\All Codes\Tabu\TabuProject\TabuProject\obj\Debug\net8.0\TabuProject.AssemblyInfo.cs
+C:\Users\ll Novbe\Desktop\All Codes\Tabu\TabuProject\TabuProject\obj\Debug\net8.0\TabuProject.csproj.CoreCompileInputs.cache
+C:\Users\ll Novbe\Desktop\All Codes\Tabu\TabuProject\TabuProject\obj\Debug\net8.0\TabuProject.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\ll Novbe\Desktop\All Codes\Tabu\TabuProject\TabuProject\obj\Debug\net8.0\TabuProject.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\ll Novbe\Desktop\All Codes\Tabu\TabuProject\TabuProject\obj\Debug\net8.0\TabuProject.sourcelink.json
+C:\Users\ll Novbe\Desktop\All Codes\Tabu\TabuProject\TabuProject\obj\Debug\net8.0\TabuProject.dll
+C:\Users\ll Novbe\Desktop\All Codes\Tabu\TabuProject\TabuProject\obj\Debug\net8.0\refint\TabuProject.dll
+C:\Users\ll Novbe\Desktop\All Codes\Tabu\TabuProject\TabuProject\obj\Debug\net8.0\TabuProject.pdb

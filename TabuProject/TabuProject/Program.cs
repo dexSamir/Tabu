@@ -17,8 +17,9 @@ public class Program
         // Add services to the container.
         builder.Services.AddAutoMapper(typeof(Program)); 
         builder.Services.AddControllers();
-        builder.Services.AddDbContext<TabuDbContext>(x=> x.UseNpgsql
-        (builder.Configuration.GetConnectionString("PostgreSQL")));
+        builder.Services.AddDbContext<TabuDbContext>(x=> 
+            x.UseNpgsql(builder.Configuration.GetConnectionString("PostgreSQL")));
+
         builder.Services.AddFluentValidationAutoValidation(); 
         builder.Services.AddValidatorsFromAssemblyContaining<Program>();
         builder.Services.AddScoped<IBannedWordService, BannedWordService>(); 
