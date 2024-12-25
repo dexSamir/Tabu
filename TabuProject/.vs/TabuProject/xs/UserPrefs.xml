@@ -1,57 +1,28 @@
 ﻿<Properties StartupConfiguration="{E573F2D7-BC6A-4810-BDDA-056071A1AB15}|https">
-  <MonoDevelop.Ide.Workbench ActiveDocument="TabuProject/Validators/Words/WordUpdateDtoValidator.cs">
-    <Files>
-      <File FileName="TabuProject/DTOs/Word/WordCreateDto.cs" Line="12" Column="1" />
-      <File FileName="TabuProject/Controllers/WordController.cs" Line="3" Column="29" />
-      <File FileName="TabuProject/Validators/Words/WordCreateDtoValidator.cs" Line="25" Column="7" />
-      <File FileName="TabuProject/Validators/Words/WordUpdateDtoValidator.cs" Line="9" Column="34" />
-      <File FileName="TabuProject/Program.cs" Line="21" Column="69" />
-      <File FileName="TabuProject/DAL/TabuDbContext.cs" Line="7" Column="36" />
-      <File FileName="TabuProject/Controllers/BannedWordController.cs" />
-      <File FileName="TabuProject/Controllers/LanguagesController.cs" />
-      <File FileName="TabuProject/Entities/BannedWord.cs" Line="1" Column="1" />
-      <File FileName="TabuProject/DTOs/Word/WordGetDto.cs" Line="1" Column="1" />
-      <File FileName="TabuProject/DTOs/Word/WordUpdateDto.cs" Line="1" Column="1" />
-      <File FileName="TabuProject/Profiles/BannedWordProfile.cs" Line="1" Column="1" />
-      <File FileName="TabuProject/Profiles/LanguageProfile.cs" Line="1" Column="1" />
-      <File FileName="TabuProject/Profiles/WordProfile.cs" Line="1" Column="1" />
-      <File FileName="TabuProject/Services/Abstracts/IBannedWordService.cs" Line="1" Column="1" />
-      <File FileName="TabuProject/Services/Abstracts/ILanguageService.cs" Line="1" Column="1" />
-      <File FileName="TabuProject/Services/Abstracts/IWordService.cs" Line="1" Column="1" />
-      <File FileName="TabuProject/ServiceRegistration.cs" Line="1" Column="1" />
-    </Files>
+  <MonoDevelop.Ide.ItemProperties.TabuProject PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workbench>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="TabuProject">
             <Node name="TabuProject">
-              <Node name="Controllers" expanded="True" />
-              <Node name="DAL" expanded="True" />
-              <Node name="DTOs" expanded="True">
-                <Node name="Word" expanded="True" />
+              <Node name="DTOs">
+                <Node name="Games" expanded="True" />
+                <Node name="Words" expanded="True" selected="True" />
               </Node>
-              <Node name="Profiles" expanded="True" />
-              <Node name="Services" expanded="True">
-                <Node name="Abstracts" expanded="True" />
-              </Node>
-              <Node name="Validators" expanded="True">
-                <Node name="Words" expanded="True">
-                  <Node name="WordUpdateDtoValidator.cs" selected="True" />
-                </Node>
-              </Node>
+              <Node name="Entities" expanded="True" />
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
       <Breakpoint file="/Users/samirhebibov/Desktop/Tabu/TabuProject/TabuProject/Services/Implements/WordService.cs" relfile="TabuProject/Services/Implements/WordService.cs" line="26" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.TabuProject PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>

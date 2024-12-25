@@ -1,6 +1,6 @@
 ﻿using System;
 using FluentValidation;
-using TabuProject.DTOs.Word;
+using TabuProject.DTOs.Words;
 
 namespace TabuProject.Validators.Words
 {

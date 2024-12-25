@@ -53,9 +53,8 @@ namespace TabuProject.DAL
 					.IsRequired();
 				g.Property(x => x.SkipCount)
 					.IsRequired();
-				g.Property(x => x.SuccessAnswer)
+				g.Property(x => x.Second)
 					.IsRequired(); 
-
 			});
 			modelBuilder.Entity<BannedWord>(b =>
 			{

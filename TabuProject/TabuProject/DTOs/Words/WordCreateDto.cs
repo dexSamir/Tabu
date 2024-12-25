@@ -1,5 +1,5 @@
 ﻿using System;
-namespace TabuProject.DTOs.Word
+namespace TabuProject.DTOs.Words
 {
 	public class WordCreateDto
 	{

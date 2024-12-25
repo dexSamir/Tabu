@@ -71,7 +71,6 @@ namespace TabuProject.Migrations
                         .HasColumnType("integer");
 
                     b.Property<int?>("SuccessAnswer")
-                        .IsRequired()
                         .HasColumnType("integer");
 
                     b.Property<int?>("WrongAnswer")

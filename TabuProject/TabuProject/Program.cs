@@ -22,7 +22,8 @@ public class Program
         (builder.Configuration.GetConnectionString("PostgreSQL")));
         builder.Services.AddFluentValidationAutoValidation(); 
         builder.Services.AddValidatorsFromAssemblyContaining<Program>();
-        builder.Services.AddService(); 
+        builder.Services.AddService();
+        builder.Services.AddMemoryCache();
 
         // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
         builder.Services.AddEndpointsApiExplorer();

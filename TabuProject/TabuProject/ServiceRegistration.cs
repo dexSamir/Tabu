@@ -11,6 +11,7 @@ namespace TabuProject
             services.AddScoped<IBannedWordService, BannedWordService>();
 			services.AddScoped<IWordService, WordService>();
             services.AddScoped<ILanguageService, LanguageService>();
+			services.AddScoped<IGameService, GameService>(); 
             return services; 
 		}
 	}

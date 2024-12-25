@@ -12,8 +12,8 @@ using TabuProject.DAL;
 namespace TabuProject.Migrations
 {
     [DbContext(typeof(TabuDbContext))]
-    [Migration("20241224222129_UpdateNameBannedWord")]
-    partial class UpdateNameBannedWord
+    [Migration("20241225053727_AllTables")]
+    partial class AllTables
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -74,7 +74,6 @@ namespace TabuProject.Migrations
                         .HasColumnType("integer");
 
                     b.Property<int?>("SuccessAnswer")
-                        .IsRequired()
                         .HasColumnType("integer");
 
                     b.Property<int?>("WrongAnswer")

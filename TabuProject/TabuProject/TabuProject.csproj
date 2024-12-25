@@ -40,12 +40,14 @@
     <None Remove="Profiles\" />
     <None Remove="Exceptions\" />
     <None Remove="Exceptions\Languages\" />
-    <None Remove="DTOs\Word\" />
     <None Remove="Exceptions\Words\" />
     <None Remove="DTOs\BannedWord\" />
     <None Remove="Exceptions\BannedWords\" />
     <None Remove="Validators\Words\" />
     <None Remove="Validators\BannedWords\" />
+    <None Remove="DTOs\Games\" />
+    <None Remove="DTOs\Words\" />
+    <None Remove="Exceptions\Games\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Entities\" />
@@ -59,10 +61,12 @@
     <Folder Include="Profiles\" />
     <Folder Include="Exceptions\" />
     <Folder Include="Exceptions\Languages\" />
-    <Folder Include="DTOs\Word\" />
     <Folder Include="Exceptions\Words\" />
     <Folder Include="DTOs\BannedWord\" />
     <Folder Include="Exceptions\BannedWords\" />
     <Folder Include="Validators\Words\" />
+    <Folder Include="DTOs\Games\" />
+    <Folder Include="DTOs\Words\" />
+    <Folder Include="Exceptions\Games\" />
   </ItemGroup>
 </Project>

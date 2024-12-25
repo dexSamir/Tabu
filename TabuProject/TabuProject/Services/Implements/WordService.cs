@@ -2,7 +2,7 @@
 using AutoMapper;
 using Microsoft.EntityFrameworkCore;
 using TabuProject.DAL;
-using TabuProject.DTOs.Word;
+using TabuProject.DTOs.Words;
 using TabuProject.Entities;
 using TabuProject.Exceptions.Languages;
 using TabuProject.Exceptions.Words;

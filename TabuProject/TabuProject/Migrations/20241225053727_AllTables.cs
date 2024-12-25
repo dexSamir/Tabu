@@ -7,7 +7,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace TabuProject.Migrations
 {
     /// <inheritdoc />
-    public partial class CreateAllTables : Migration
+    public partial class AllTables : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -35,7 +35,7 @@ namespace TabuProject.Migrations
                     SkipCount = table.Column<int>(type: "integer", nullable: false),
                     Second = table.Column<int>(type: "integer", nullable: false),
                     Score = table.Column<int>(type: "integer", nullable: true),
-                    SuccessAnswer = table.Column<int>(type: "integer", nullable: false),
+                    SuccessAnswer = table.Column<int>(type: "integer", nullable: true),
                     WrongAnswer = table.Column<int>(type: "integer", nullable: true),
                     LangCode = table.Column<string>(type: "character(2)", nullable: false)
                 },
@@ -71,7 +71,7 @@ namespace TabuProject.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "bannedWords",
+                name: "BannedWords",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "integer", nullable: false)
@@ -81,14 +81,19 @@ namespace TabuProject.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_bannedWords", x => x.Id);
+                    table.PrimaryKey("PK_BannedWords", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_bannedWords_Words_WordId",
+                        name: "FK_BannedWords_Words_WordId",
                         column: x => x.WordId,
                         principalTable: "Words",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                 });
+
+            migrationBuilder.CreateIndex(
+                name: "IX_BannedWords_WordId",
+                table: "BannedWords",
+                column: "WordId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Games_LangCode",
@@ -105,21 +110,16 @@ namespace TabuProject.Migrations
                 name: "IX_Words_LangCode",
                 table: "Words",
                 column: "LangCode");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_bannedWords_WordId",
-                table: "bannedWords",
-                column: "WordId");
         }
 
         /// <inheritdoc />
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "Games");
+                name: "BannedWords");
 
             migrationBuilder.DropTable(
-                name: "bannedWords");
+                name: "Games");
 
             migrationBuilder.DropTable(
                 name: "Words");

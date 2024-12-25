@@ -1,5 +1,5 @@
 ﻿using System;
-using TabuProject.DTOs.Word;
+using TabuProject.DTOs.Words;
 
 namespace TabuProject.Services.Abstracts
 {

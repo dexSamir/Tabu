@@ -1,3 +1,14 @@
+C:/Users/ll Novbe/Desktop/All Codes/Tabu/TabuProject/TabuProject/obj/Debug/net8.0/TabuProject.csproj.AssemblyReference.cache
+C:/Users/ll Novbe/Desktop/All Codes/Tabu/TabuProject/TabuProject/obj/Debug/net8.0/TabuProject.GeneratedMSBuildEditorConfig.editorconfig
+C:/Users/ll Novbe/Desktop/All Codes/Tabu/TabuProject/TabuProject/obj/Debug/net8.0/TabuProject.AssemblyInfoInputs.cache
+C:/Users/ll Novbe/Desktop/All Codes/Tabu/TabuProject/TabuProject/obj/Debug/net8.0/TabuProject.AssemblyInfo.cs
+C:/Users/ll Novbe/Desktop/All Codes/Tabu/TabuProject/TabuProject/obj/Debug/net8.0/TabuProject.csproj.CoreCompileInputs.cache
+C:/Users/ll Novbe/Desktop/All Codes/Tabu/TabuProject/TabuProject/obj/Debug/net8.0/TabuProject.MvcApplicationPartsAssemblyInfo.cs
+C:/Users/ll Novbe/Desktop/All Codes/Tabu/TabuProject/TabuProject/obj/Debug/net8.0/TabuProject.MvcApplicationPartsAssemblyInfo.cache
+C:/Users/ll Novbe/Desktop/All Codes/Tabu/TabuProject/TabuProject/obj/Debug/net8.0/TabuProject.sourcelink.json
+C:/Users/ll Novbe/Desktop/All Codes/Tabu/TabuProject/TabuProject/obj/Debug/net8.0/TabuProject.dll
+C:/Users/ll Novbe/Desktop/All Codes/Tabu/TabuProject/TabuProject/obj/Debug/net8.0/refint/TabuProject.dll
+C:/Users/ll Novbe/Desktop/All Codes/Tabu/TabuProject/TabuProject/obj/Debug/net8.0/TabuProject.pdb
 /Users/samirhebibov/Desktop/Tabu/TabuProject/TabuProject/bin/Debug/net8.0/appsettings.Development.json
 /Users/samirhebibov/Desktop/Tabu/TabuProject/TabuProject/bin/Debug/net8.0/appsettings.json
 /Users/samirhebibov/Desktop/Tabu/TabuProject/TabuProject/bin/Debug/net8.0/TabuProject.staticwebassets.runtime.json
@@ -7,6 +18,8 @@
 /Users/samirhebibov/Desktop/Tabu/TabuProject/TabuProject/bin/Debug/net8.0/TabuProject.dll
 /Users/samirhebibov/Desktop/Tabu/TabuProject/TabuProject/bin/Debug/net8.0/TabuProject.pdb
 /Users/samirhebibov/Desktop/Tabu/TabuProject/TabuProject/bin/Debug/net8.0/AutoMapper.dll
+/Users/samirhebibov/Desktop/Tabu/TabuProject/TabuProject/bin/Debug/net8.0/Azure.Core.dll
+/Users/samirhebibov/Desktop/Tabu/TabuProject/TabuProject/bin/Debug/net8.0/Azure.Identity.dll
 /Users/samirhebibov/Desktop/Tabu/TabuProject/TabuProject/bin/Debug/net8.0/FluentValidation.dll
 /Users/samirhebibov/Desktop/Tabu/TabuProject/TabuProject/bin/Debug/net8.0/FluentValidation.AspNetCore.dll
 /Users/samirhebibov/Desktop/Tabu/TabuProject/TabuProject/bin/Debug/net8.0/FluentValidation.DependencyInjectionExtensions.dll
@@ -33,12 +46,14 @@
 /Users/samirhebibov/Desktop/Tabu/TabuProject/TabuProject/bin/Debug/net8.0/Microsoft.CodeAnalysis.Razor.dll
 /Users/samirhebibov/Desktop/Tabu/TabuProject/TabuProject/bin/Debug/net8.0/Microsoft.CodeAnalysis.Scripting.dll
 /Users/samirhebibov/Desktop/Tabu/TabuProject/TabuProject/bin/Debug/net8.0/Microsoft.CodeAnalysis.Workspaces.dll
+/Users/samirhebibov/Desktop/Tabu/TabuProject/TabuProject/bin/Debug/net8.0/Microsoft.Data.SqlClient.dll
 /Users/samirhebibov/Desktop/Tabu/TabuProject/TabuProject/bin/Debug/net8.0/Microsoft.DiaSymReader.dll
 /Users/samirhebibov/Desktop/Tabu/TabuProject/TabuProject/bin/Debug/net8.0/Microsoft.DotNet.Scaffolding.Shared.dll
 /Users/samirhebibov/Desktop/Tabu/TabuProject/TabuProject/bin/Debug/net8.0/Microsoft.EntityFrameworkCore.dll
 /Users/samirhebibov/Desktop/Tabu/TabuProject/TabuProject/bin/Debug/net8.0/Microsoft.EntityFrameworkCore.Abstractions.dll
 /Users/samirhebibov/Desktop/Tabu/TabuProject/TabuProject/bin/Debug/net8.0/Microsoft.EntityFrameworkCore.Design.dll
 /Users/samirhebibov/Desktop/Tabu/TabuProject/TabuProject/bin/Debug/net8.0/Microsoft.EntityFrameworkCore.Relational.dll
+/Users/samirhebibov/Desktop/Tabu/TabuProject/TabuProject/bin/Debug/net8.0/Microsoft.EntityFrameworkCore.SqlServer.dll
 /Users/samirhebibov/Desktop/Tabu/TabuProject/TabuProject/bin/Debug/net8.0/Microsoft.Extensions.Caching.Memory.dll
 /Users/samirhebibov/Desktop/Tabu/TabuProject/TabuProject/bin/Debug/net8.0/Microsoft.Extensions.DependencyInjection.dll
 /Users/samirhebibov/Desktop/Tabu/TabuProject/TabuProject/bin/Debug/net8.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll
@@ -46,9 +61,18 @@
 /Users/samirhebibov/Desktop/Tabu/TabuProject/TabuProject/bin/Debug/net8.0/Microsoft.Extensions.Logging.dll
 /Users/samirhebibov/Desktop/Tabu/TabuProject/TabuProject/bin/Debug/net8.0/Microsoft.Extensions.Logging.Abstractions.dll
 /Users/samirhebibov/Desktop/Tabu/TabuProject/TabuProject/bin/Debug/net8.0/Microsoft.Extensions.Options.dll
+/Users/samirhebibov/Desktop/Tabu/TabuProject/TabuProject/bin/Debug/net8.0/Microsoft.Identity.Client.dll
+/Users/samirhebibov/Desktop/Tabu/TabuProject/TabuProject/bin/Debug/net8.0/Microsoft.Identity.Client.Extensions.Msal.dll
+/Users/samirhebibov/Desktop/Tabu/TabuProject/TabuProject/bin/Debug/net8.0/Microsoft.IdentityModel.Abstractions.dll
+/Users/samirhebibov/Desktop/Tabu/TabuProject/TabuProject/bin/Debug/net8.0/Microsoft.IdentityModel.JsonWebTokens.dll
+/Users/samirhebibov/Desktop/Tabu/TabuProject/TabuProject/bin/Debug/net8.0/Microsoft.IdentityModel.Logging.dll
+/Users/samirhebibov/Desktop/Tabu/TabuProject/TabuProject/bin/Debug/net8.0/Microsoft.IdentityModel.Protocols.dll
+/Users/samirhebibov/Desktop/Tabu/TabuProject/TabuProject/bin/Debug/net8.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+/Users/samirhebibov/Desktop/Tabu/TabuProject/TabuProject/bin/Debug/net8.0/Microsoft.IdentityModel.Tokens.dll
 /Users/samirhebibov/Desktop/Tabu/TabuProject/TabuProject/bin/Debug/net8.0/Microsoft.JSInterop.dll
 /Users/samirhebibov/Desktop/Tabu/TabuProject/TabuProject/bin/Debug/net8.0/Microsoft.NET.StringTools.dll
 /Users/samirhebibov/Desktop/Tabu/TabuProject/TabuProject/bin/Debug/net8.0/Microsoft.OpenApi.dll
+/Users/samirhebibov/Desktop/Tabu/TabuProject/TabuProject/bin/Debug/net8.0/Microsoft.SqlServer.Server.dll
 /Users/samirhebibov/Desktop/Tabu/TabuProject/TabuProject/bin/Debug/net8.0/Microsoft.VisualStudio.Web.CodeGeneration.dll
 /Users/samirhebibov/Desktop/Tabu/TabuProject/TabuProject/bin/Debug/net8.0/Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
 /Users/samirhebibov/Desktop/Tabu/TabuProject/TabuProject/bin/Debug/net8.0/dotnet-aspnet-codegenerator-design.dll
@@ -73,6 +97,7 @@
 /Users/samirhebibov/Desktop/Tabu/TabuProject/TabuProject/bin/Debug/net8.0/Swashbuckle.AspNetCore.Swagger.dll
 /Users/samirhebibov/Desktop/Tabu/TabuProject/TabuProject/bin/Debug/net8.0/Swashbuckle.AspNetCore.SwaggerGen.dll
 /Users/samirhebibov/Desktop/Tabu/TabuProject/TabuProject/bin/Debug/net8.0/Swashbuckle.AspNetCore.SwaggerUI.dll
+/Users/samirhebibov/Desktop/Tabu/TabuProject/TabuProject/bin/Debug/net8.0/System.ClientModel.dll
 /Users/samirhebibov/Desktop/Tabu/TabuProject/TabuProject/bin/Debug/net8.0/System.CodeDom.dll
 /Users/samirhebibov/Desktop/Tabu/TabuProject/TabuProject/bin/Debug/net8.0/System.Composition.AttributedModel.dll
 /Users/samirhebibov/Desktop/Tabu/TabuProject/TabuProject/bin/Debug/net8.0/System.Composition.Convention.dll
@@ -82,7 +107,10 @@
 /Users/samirhebibov/Desktop/Tabu/TabuProject/TabuProject/bin/Debug/net8.0/System.Configuration.ConfigurationManager.dll
 /Users/samirhebibov/Desktop/Tabu/TabuProject/TabuProject/bin/Debug/net8.0/System.Drawing.Common.dll
 /Users/samirhebibov/Desktop/Tabu/TabuProject/TabuProject/bin/Debug/net8.0/System.Formats.Asn1.dll
+/Users/samirhebibov/Desktop/Tabu/TabuProject/TabuProject/bin/Debug/net8.0/System.IdentityModel.Tokens.Jwt.dll
+/Users/samirhebibov/Desktop/Tabu/TabuProject/TabuProject/bin/Debug/net8.0/System.Memory.Data.dll
 /Users/samirhebibov/Desktop/Tabu/TabuProject/TabuProject/bin/Debug/net8.0/System.Reflection.MetadataLoadContext.dll
+/Users/samirhebibov/Desktop/Tabu/TabuProject/TabuProject/bin/Debug/net8.0/System.Runtime.Caching.dll
 /Users/samirhebibov/Desktop/Tabu/TabuProject/TabuProject/bin/Debug/net8.0/System.Security.Cryptography.ProtectedData.dll
 /Users/samirhebibov/Desktop/Tabu/TabuProject/TabuProject/bin/Debug/net8.0/System.Security.Permissions.dll
 /Users/samirhebibov/Desktop/Tabu/TabuProject/TabuProject/bin/Debug/net8.0/System.Windows.Extensions.dll
@@ -225,8 +253,15 @@
 /Users/samirhebibov/Desktop/Tabu/TabuProject/TabuProject/bin/Debug/net8.0/tr/Microsoft.CodeAnalysis.Workspaces.resources.dll
 /Users/samirhebibov/Desktop/Tabu/TabuProject/TabuProject/bin/Debug/net8.0/zh-Hans/Microsoft.CodeAnalysis.Workspaces.resources.dll
 /Users/samirhebibov/Desktop/Tabu/TabuProject/TabuProject/bin/Debug/net8.0/zh-Hant/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/samirhebibov/Desktop/Tabu/TabuProject/TabuProject/bin/Debug/net8.0/runtimes/unix/lib/net6.0/Microsoft.Data.SqlClient.dll
+/Users/samirhebibov/Desktop/Tabu/TabuProject/TabuProject/bin/Debug/net8.0/runtimes/win/lib/net6.0/Microsoft.Data.SqlClient.dll
+/Users/samirhebibov/Desktop/Tabu/TabuProject/TabuProject/bin/Debug/net8.0/runtimes/win-arm/native/Microsoft.Data.SqlClient.SNI.dll
+/Users/samirhebibov/Desktop/Tabu/TabuProject/TabuProject/bin/Debug/net8.0/runtimes/win-arm64/native/Microsoft.Data.SqlClient.SNI.dll
+/Users/samirhebibov/Desktop/Tabu/TabuProject/TabuProject/bin/Debug/net8.0/runtimes/win-x64/native/Microsoft.Data.SqlClient.SNI.dll
+/Users/samirhebibov/Desktop/Tabu/TabuProject/TabuProject/bin/Debug/net8.0/runtimes/win-x86/native/Microsoft.Data.SqlClient.SNI.dll
 /Users/samirhebibov/Desktop/Tabu/TabuProject/TabuProject/bin/Debug/net8.0/runtimes/win/lib/net7.0/Microsoft.Win32.SystemEvents.dll
 /Users/samirhebibov/Desktop/Tabu/TabuProject/TabuProject/bin/Debug/net8.0/runtimes/win/lib/net7.0/System.Drawing.Common.dll
+/Users/samirhebibov/Desktop/Tabu/TabuProject/TabuProject/bin/Debug/net8.0/runtimes/win/lib/net6.0/System.Runtime.Caching.dll
 /Users/samirhebibov/Desktop/Tabu/TabuProject/TabuProject/bin/Debug/net8.0/runtimes/win/lib/net7.0/System.Security.Cryptography.ProtectedData.dll
 /Users/samirhebibov/Desktop/Tabu/TabuProject/TabuProject/bin/Debug/net8.0/runtimes/win/lib/net7.0/System.Windows.Extensions.dll
 /Users/samirhebibov/Desktop/Tabu/TabuProject/TabuProject/obj/Debug/net8.0/TabuProject.csproj.AssemblyReference.cache
@@ -251,38 +286,3 @@
 /Users/samirhebibov/Desktop/Tabu/TabuProject/TabuProject/obj/Debug/net8.0/TabuProject.pdb
 /Users/samirhebibov/Desktop/Tabu/TabuProject/TabuProject/obj/Debug/net8.0/TabuProject.genruntimeconfig.cache
 /Users/samirhebibov/Desktop/Tabu/TabuProject/TabuProject/obj/Debug/net8.0/ref/TabuProject.dll
-C:/Users/ll Novbe/Desktop/All Codes/Tabu/TabuProject/TabuProject/obj/Debug/net8.0/TabuProject.csproj.AssemblyReference.cache
-C:/Users/ll Novbe/Desktop/All Codes/Tabu/TabuProject/TabuProject/obj/Debug/net8.0/TabuProject.GeneratedMSBuildEditorConfig.editorconfig
-C:/Users/ll Novbe/Desktop/All Codes/Tabu/TabuProject/TabuProject/obj/Debug/net8.0/TabuProject.AssemblyInfoInputs.cache
-C:/Users/ll Novbe/Desktop/All Codes/Tabu/TabuProject/TabuProject/obj/Debug/net8.0/TabuProject.AssemblyInfo.cs
-C:/Users/ll Novbe/Desktop/All Codes/Tabu/TabuProject/TabuProject/obj/Debug/net8.0/TabuProject.csproj.CoreCompileInputs.cache
-C:/Users/ll Novbe/Desktop/All Codes/Tabu/TabuProject/TabuProject/obj/Debug/net8.0/TabuProject.MvcApplicationPartsAssemblyInfo.cs
-C:/Users/ll Novbe/Desktop/All Codes/Tabu/TabuProject/TabuProject/obj/Debug/net8.0/TabuProject.MvcApplicationPartsAssemblyInfo.cache
-C:/Users/ll Novbe/Desktop/All Codes/Tabu/TabuProject/TabuProject/obj/Debug/net8.0/TabuProject.sourcelink.json
-C:/Users/ll Novbe/Desktop/All Codes/Tabu/TabuProject/TabuProject/obj/Debug/net8.0/TabuProject.dll
-C:/Users/ll Novbe/Desktop/All Codes/Tabu/TabuProject/TabuProject/obj/Debug/net8.0/refint/TabuProject.dll
-C:/Users/ll Novbe/Desktop/All Codes/Tabu/TabuProject/TabuProject/obj/Debug/net8.0/TabuProject.pdb
-/Users/samirhebibov/Desktop/Tabu/TabuProject/TabuProject/bin/Debug/net8.0/Azure.Core.dll
-/Users/samirhebibov/Desktop/Tabu/TabuProject/TabuProject/bin/Debug/net8.0/Azure.Identity.dll
-/Users/samirhebibov/Desktop/Tabu/TabuProject/TabuProject/bin/Debug/net8.0/Microsoft.Data.SqlClient.dll
-/Users/samirhebibov/Desktop/Tabu/TabuProject/TabuProject/bin/Debug/net8.0/Microsoft.EntityFrameworkCore.SqlServer.dll
-/Users/samirhebibov/Desktop/Tabu/TabuProject/TabuProject/bin/Debug/net8.0/Microsoft.Identity.Client.dll
-/Users/samirhebibov/Desktop/Tabu/TabuProject/TabuProject/bin/Debug/net8.0/Microsoft.Identity.Client.Extensions.Msal.dll
-/Users/samirhebibov/Desktop/Tabu/TabuProject/TabuProject/bin/Debug/net8.0/Microsoft.IdentityModel.Abstractions.dll
-/Users/samirhebibov/Desktop/Tabu/TabuProject/TabuProject/bin/Debug/net8.0/Microsoft.IdentityModel.JsonWebTokens.dll
-/Users/samirhebibov/Desktop/Tabu/TabuProject/TabuProject/bin/Debug/net8.0/Microsoft.IdentityModel.Logging.dll
-/Users/samirhebibov/Desktop/Tabu/TabuProject/TabuProject/bin/Debug/net8.0/Microsoft.IdentityModel.Protocols.dll
-/Users/samirhebibov/Desktop/Tabu/TabuProject/TabuProject/bin/Debug/net8.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
-/Users/samirhebibov/Desktop/Tabu/TabuProject/TabuProject/bin/Debug/net8.0/Microsoft.IdentityModel.Tokens.dll
-/Users/samirhebibov/Desktop/Tabu/TabuProject/TabuProject/bin/Debug/net8.0/Microsoft.SqlServer.Server.dll
-/Users/samirhebibov/Desktop/Tabu/TabuProject/TabuProject/bin/Debug/net8.0/System.ClientModel.dll
-/Users/samirhebibov/Desktop/Tabu/TabuProject/TabuProject/bin/Debug/net8.0/System.IdentityModel.Tokens.Jwt.dll
-/Users/samirhebibov/Desktop/Tabu/TabuProject/TabuProject/bin/Debug/net8.0/System.Memory.Data.dll
-/Users/samirhebibov/Desktop/Tabu/TabuProject/TabuProject/bin/Debug/net8.0/System.Runtime.Caching.dll
-/Users/samirhebibov/Desktop/Tabu/TabuProject/TabuProject/bin/Debug/net8.0/runtimes/unix/lib/net6.0/Microsoft.Data.SqlClient.dll
-/Users/samirhebibov/Desktop/Tabu/TabuProject/TabuProject/bin/Debug/net8.0/runtimes/win/lib/net6.0/Microsoft.Data.SqlClient.dll
-/Users/samirhebibov/Desktop/Tabu/TabuProject/TabuProject/bin/Debug/net8.0/runtimes/win-arm/native/Microsoft.Data.SqlClient.SNI.dll
-/Users/samirhebibov/Desktop/Tabu/TabuProject/TabuProject/bin/Debug/net8.0/runtimes/win-arm64/native/Microsoft.Data.SqlClient.SNI.dll
-/Users/samirhebibov/Desktop/Tabu/TabuProject/TabuProject/bin/Debug/net8.0/runtimes/win-x64/native/Microsoft.Data.SqlClient.SNI.dll
-/Users/samirhebibov/Desktop/Tabu/TabuProject/TabuProject/bin/Debug/net8.0/runtimes/win-x86/native/Microsoft.Data.SqlClient.SNI.dll
-/Users/samirhebibov/Desktop/Tabu/TabuProject/TabuProject/bin/Debug/net8.0/runtimes/win/lib/net6.0/System.Runtime.Caching.dll
