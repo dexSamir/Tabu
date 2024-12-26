@@ -13,11 +13,7 @@ namespace TabuProject.DAL
 		public TabuDbContext(DbContextOptions<TabuDbContext> options) : base(options) { }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-<<<<<<< HEAD
 			modelBuilder.ApplyConfigurationsFromAssembly(typeof(TabuDbContext).Assembly); 
-=======
-			modelBuilder.ApplyConfigurationsFromAssembly(typeof(TabuDbContext).Assembly);
->>>>>>> e8b785d09ea60016d908cb50d1ca735cc7e2c669
             base.OnModelCreating(modelBuilder);
         }
     }

@@ -70,7 +70,6 @@
     <Folder Include="DTOs\Games\" />
     <Folder Include="DTOs\Words\" />
     <Folder Include="Exceptions\Games\" />
-    <Folder Include="Configuration\" />
     <Folder Include="Extension\" />
   </ItemGroup>
 </Project>
