@@ -33,14 +33,27 @@ namespace TabuProject.Services.Implements
             return game.Id; 
         }
 
-        public Task End(Guid id)
+        public async Task<GameStatusDto> End(Guid id)
         {
-            throw new NotImplementedException();
+            var status = _getCurrentGame(id);
+            _cache.Remove(id);
+            return new GameStatusDto
+            {
+                Score = status.Score,
+                Fail = status.Fail,
+                Skip = status.Skip,
+                Success = status.Success
+            }; 
         }
 
-        public Task Fail(Guid id)
+        public async Task<WordForGameDto> Fail(Guid id)
         {
-            throw new NotImplementedException();
+            var status = _getCurrentGame(id);
+            var currentWord = status.Words.Pop();
+            status.Fail++;
+            status.Score--;
+            setCache(id, status);
+            return currentWord; 
         }
 
         public async Task<WordForGameDto> Skip(Guid id)
@@ -49,8 +62,8 @@ namespace TabuProject.Services.Implements
             if(status.Skip <= status.MaxSkipCount)
             {
                 var currentWord = status.Words.Pop();
-                status.Skip++; 
-                _cache.Set(id, status, TimeSpan.FromSeconds(300));
+                status.Skip++;
+                setCache(id, status);
                 return currentWord; 
             }
             return null; 
@@ -60,7 +73,7 @@ namespace TabuProject.Services.Implements
         {
             var game = await _context.Games.FindAsync(id); 
             if (game == null || game.Score != null)
-                throw new Exception();
+                throw new GamesNotFoundException();
 
             IQueryable<Word> query = _context.Words.Where(x => x.LangCode == game.LangCode);
 
@@ -87,22 +100,31 @@ namespace TabuProject.Services.Implements
                 UsedWordsId = words.Select(x => x.Id)
             };
 
-            _cache.Set(id, status, TimeSpan.FromSeconds(300));
+            setCache(id, status);
             return currentWord; 
         }
 
-        public Task Success(Guid id)
+        public async Task<WordForGameDto> Success(Guid id)
         {
-            throw new NotImplementedException();
+            var status = _getCurrentGame(id);
+            status.Success++;
+            status.Score++; 
+            var currentWord = status.Words.Pop();
+            setCache(id, status); 
+            return currentWord; 
         }
 
         GameStatusDto _getCurrentGame(Guid id)
         {
             var result = _cache.Get<GameStatusDto>(id);
             if (result == null)
-                throw new Exception();
+                throw new GamesNotFoundException();
 
             return result; 
+        }
+        void setCache(Guid id, GameStatusDto status)
+        {
+            _cache.Set(id, status, TimeSpan.FromSeconds(300)); 
         }
     }
 }

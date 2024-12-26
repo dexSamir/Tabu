@@ -12,7 +12,7 @@ namespace TabuProject.DTOs.Games
 		public Stack<WordForGameDto> Words { get; set; }
 		public IEnumerable<int> UsedWordsId { get; set; }
 		public int MaxSkipCount { get; set; }
-
+		public int Score { get; set; }
 	}
 }
 

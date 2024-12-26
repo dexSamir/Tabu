@@ -5,39 +5,26 @@
       <Breakpoint file="/Users/samirhebibov/Desktop/Tabu/TabuProject/TabuProject/Services/Implements/WordService.cs" relfile="TabuProject/Services/Implements/WordService.cs" line="66" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workbench ActiveDocument="TabuProject/Configurations/BannedWordConfiguration.cs">
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.TabuProject PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="TabuProject/Controllers/BannedWordController.cs">
     <Files>
-      <File FileName="TabuProject/Controllers/GamesController.cs" Line="20" Column="10" />
-      <File FileName="TabuProject/Services/Implements/GameService.cs" Line="59" Column="37" />
-      <File FileName="TabuProject/Services/Abstracts/IGameService.cs" Line="11" Column="39" />
-      <File FileName="TabuProject/DTOs/Games/GameCreateDto.cs" Line="11" Column="1" />
-      <File FileName="TabuProject/Configurations/BannedWordConfiguration.cs" Line="7" Column="56" />
+      <File FileName="TabuProject/Controllers/BannedWordController.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="TabuProject" expanded="True">
-            <Node name="TabuProject">
-              <Node name="Configurations" expanded="True">
-                <Node name="BannedWordConfiguration.cs" selected="True" />
-              </Node>
-              <Node name="Controllers" expanded="True" />
+          <Node name="TabuProject">
+            <Node name="TabuProject" expanded="True">
               <Node name="DTOs" expanded="True">
-                <Node name="Games" expanded="True" />
+                <Node name="BannedWord" selected="True" />
               </Node>
-              <Node name="Services" expanded="True">
-                <Node name="Abstracts" expanded="True" />
-                <Node name="Implements" expanded="True" />
-              </Node>
-              <Node name="Validators" expanded="True" />
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.TabuProject PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>

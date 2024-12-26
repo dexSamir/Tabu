@@ -18,8 +18,7 @@ namespace TabuProject.Controllers
             _cache = cache; 
             _service = service; 
         }
-
-        [HttpPost]
+        [HttpPost("[action]")]
         public async Task<IActionResult> Create(GameCreateDto dto)
         {
             return Ok(await _service.CreateAsync(dto));
@@ -34,6 +33,20 @@ namespace TabuProject.Controllers
         {
             return Ok(await _service.Skip(id));
         }
-
+        [HttpGet("[action]")]
+        public async Task<IActionResult> Success(Guid id)
+        {
+            return Ok(_service.Success(id));
+        }
+        [HttpGet("[action]")]
+        public async Task<IActionResult> Fail(Guid id)
+        {
+            return Ok(_service.Fail(id));
+        }
+        [HttpGet("[action]")]
+        public async Task<IActionResult> End(Guid id)
+        {
+            return Ok(_service.End(id));
+        }
     }
 }

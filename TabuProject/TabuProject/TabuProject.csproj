@@ -50,6 +50,7 @@
     <None Remove="Exceptions\Games\" />
     <None Remove="Configuration\" />
     <None Remove="Extension\" />
+    <None Remove="Validators\Games\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Entities\" />
@@ -71,5 +72,6 @@
     <Folder Include="DTOs\Words\" />
     <Folder Include="Exceptions\Games\" />
     <Folder Include="Extension\" />
+    <Folder Include="Validators\Games\" />
   </ItemGroup>
 </Project>
