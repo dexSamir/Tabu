@@ -50,7 +50,7 @@ namespace TabuProject.Services.Implements
         {
             if(id == null)
                 throw new ArgumentNullException(nameof(id), "Id null ola bilmez!");
-            var word = await _context.Words.FindAsync(id);
+            var word = await _context.Words.Include(x=> x.BannedWords).FirstOrDefaultAsync(x=> x.Id == id);
 
             return word == null ?
                 throw new WordNotFoundException() :
@@ -68,7 +68,7 @@ namespace TabuProject.Services.Implements
             if (id == null)
                 throw new ArgumentNullException(nameof(id), "Id null ola bilmez!");
 
-            var word = await _context.Words.FindAsync(id);
+            var word = await _context.Words.FirstOrDefaultAsync(x=> x.Id == id);
             if (word == null)
                 return false;
 

@@ -48,6 +48,8 @@
     <None Remove="DTOs\Games\" />
     <None Remove="DTOs\Words\" />
     <None Remove="Exceptions\Games\" />
+    <None Remove="Configuration\" />
+    <None Remove="Extension\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Entities\" />
@@ -68,5 +70,7 @@
     <Folder Include="DTOs\Games\" />
     <Folder Include="DTOs\Words\" />
     <Folder Include="Exceptions\Games\" />
+    <Folder Include="Configuration\" />
+    <Folder Include="Extension\" />
   </ItemGroup>
 </Project>

@@ -20,29 +20,8 @@ namespace TabuProject.Controllers
         [HttpGet("{id}")]
         public async Task<IActionResult> Get(int? id)
         {
-            try
-            {
-                var word = await _service.FindById(id);
-                return Ok(word); 
-            }
-            catch (Exception ex)
-            {
-                if(ex is IBaseException BEX)
-                {
-                    return StatusCode(BEX.StatusCode, new
-                    {
-                        Message = BEX.ErrorMessage,
-                        StatusCode = BEX.StatusCode
-                    }); 
-                }
-                else
-                {
-                    return BadRequest(new 
-                    {
-                        ex.Message
-                    });
-                }
-            }
+            var word = await _service.FindById(id);
+            return Ok(word); 
         }
         [HttpGet]
         public async Task<IActionResult> GetAll()
@@ -52,59 +31,17 @@ namespace TabuProject.Controllers
         [HttpPost]
         public async Task<IActionResult> Create(WordCreateDto dto) 
         {
-            try
-            {
-                await _service.CreateAsync(dto);
-                return Ok(); 
-            }
-            catch (Exception ex)
-            {
-                if(ex is IBaseException BEX)
-                {
-                    return StatusCode(BEX.StatusCode, new
-                    {
-                        Message = BEX.ErrorMessage,
-                        StatusCode = BEX.StatusCode
-                    });
-                }
-                else
-                {
-                    return BadRequest(new
-                    {
-                        ex.Message
-                    });
-                }
-            }
+            await _service.CreateAsync(dto);
+            return Ok(); 
         }
         [HttpPost("[Action]")]
         public async Task<IActionResult> CreateMany(List<WordCreateDto> dto)
         {
-            try
+            foreach (var item in dto)
             {
-                foreach (var item in dto)
-                {
-                    await _service.CreateAsync(item);
-                }
-                return Ok();
+                await _service.CreateAsync(item);
             }
-            catch (Exception ex)
-            {
-                if (ex is IBaseException BEX)
-                {
-                    return StatusCode(BEX.StatusCode, new
-                    {
-                        Message = BEX.ErrorMessage,
-                        StatusCode = BEX.StatusCode
-                    });
-                }
-                else
-                {
-                    return BadRequest(new
-                    {
-                        ex.Message
-                    });
-                }
-            }
+            return Ok();
         }
         [HttpPatch("{id}")]
         public async Task<IActionResult> Update(int? id, WordUpdateDto dto)

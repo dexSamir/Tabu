@@ -10,8 +10,6 @@ namespace TabuProject.Profiles
 		public GameProfile()
 		{
 			CreateMap<GameCreateDto, Game>();
-			CreateMap<Game, GameGetDto>()
-				.ForMember(dest => dest.Words, opt => opt.MapFrom(src=> src.Language.Words.Select(x=> x.Text).ToList())); 
 		}
 	}
 }

@@ -45,7 +45,7 @@ namespace TabuProject.Services.Implements
         {
             if (id == null)
                 throw new ArgumentException(nameof(id), "Id null ola bilmez!");
-            var data = await _context.BannedWords.FindAsync(id);
+            var data = await _context.BannedWords.Include(x=> x.Word).FirstOrDefaultAsync(x=> x.Id == id);
             if (data == null)
                 throw new NotFoundBannedWordException();
 

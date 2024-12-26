@@ -14,7 +14,8 @@ namespace TabuProject.Profiles
 					src.BannedWords.Select(x => new BannedWord { Text = x}).ToList()));
 			CreateMap<Word, WordGetDto>()
 				.ForMember(dest => dest.BannedWords, opt => opt.MapFrom(src => src.BannedWords.Select(x=> x.Text)));   
-            CreateMap<WordUpdateDto, Word>();
+            CreateMap<WordUpdateDto, Word>()
+				.ForMember(dest => dest.BannedWords, opt => opt.MapFrom(src => src.BannedWords.Select(x => new BannedWord { Text = x})));
 		}
 	}
 }

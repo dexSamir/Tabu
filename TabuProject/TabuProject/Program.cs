@@ -6,6 +6,10 @@ using TabuProject.Services.Abstracts;
 using FluentValidation.AspNetCore;
 using FluentValidation;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Http.Features;
+using Microsoft.AspNetCore.Diagnostics;
+using TabuProject.Exceptions;
+using Microsoft.DotNet.Scaffolding.Shared.Messaging;
 
 namespace TabuProject;
 
@@ -36,6 +40,10 @@ public class Program
         {
             app.UseSwagger();
             app.UseSwaggerUI();
+        }
+        else
+        {
+            app.UseTabuExceptionHandler();
         }
 
         app.UseHttpsRedirection();
